@@ -1,0 +1,32 @@
+{
+  "name": "react-tutorial",
+  "version": "1.0.0",
+  "description": "<img src=\"http://www.reactjsprogram.com/images/reactjsprogram-500.png\" width=\"250\" align=\"right\">",
+  "main": "index.js",
+  "scripts": {
+    "production": "webpack -p",
+    "start": "webpack-dev-server --host 0.0.0.0 --port 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReactjsProgram/React-Fundamentals.git"
+  },
+  "author": "Chris Villarreal <chrisvillarreal1018@gmail.com> (http://christophior.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ReactjsProgram/React-Fundamentals/issues"
+  },
+  "homepage": "https://github.com/ReactjsProgram/React-Fundamentals#readme",
+  "dependencies": {
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7"
+  },
+  "devDependencies": {
+    "babel-core": "^6.6.5",
+    "babel-loader": "^6.2.4",
+    "babel-preset-react": "^6.5.0",
+    "html-webpack-plugin": "^2.9.0",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
