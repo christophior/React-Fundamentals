@@ -6,6 +6,7 @@ var styles = require('../styles');
 var UserDetails = require('./UserDetails')
 var UserDetailsWrapper = require('./UserDetailsWrapper');
 var MainContainer = require('../containers/MainContainer');
+var Loading = require('./Loading');
 
 function StartOverButton (props) {
 	return (
@@ -24,9 +25,7 @@ function Results (props) {
 	var losingIndex = winningIndex === 0 ? 1 : 0;
 
 	if (props.isLoading) {
-		return (
-			<p> Loading... </p>
-		);
+		return <Loading speed={100}/>;
 	}
 
 	if (props.scores[0] === props.scores[1]) {
