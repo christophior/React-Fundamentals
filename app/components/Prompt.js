@@ -1,12 +1,13 @@
 var React = require('react');
 var transparentBg = require('../styles').transparentBg;
 var PropTypes = React.PropTypes;
+var MainContainer = require('../containers/MainContainer');
 
-// fucntional stateless components
+// functional stateless components
 
 function Prompt (props) {
     return (
-        <div className="jumbotron col-sm-6 col-sm-offset-3 text-center" style={transparentBg}>
+        <MainContainer>
             <h1>{props.header}</h1>
             <div className="col-sm-12">
                 <form onSubmit={props.onSubmitUser}>
@@ -27,7 +28,7 @@ function Prompt (props) {
                     </div>
                 </form>
             </div>
-        </div>
+        </MainContainer>
     )
 }
 
